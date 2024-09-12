@@ -17,34 +17,6 @@ const closeMenuBtn = util.getEl(DOM.closeMenuBtn);
 const desktopMenu = util.getEl(DOM.desktopMenu);
 const mobileMenu = util.getEl(DOM.mobileMenu);
 const mobileMenuItems = util.getElAll(DOM.mobileMenuItems);
-//const worksSection = util.getEl(DOM.worksSection);
-console.log(openMenuBtn);
-// Generate projects
-//let btnId = 0;
-
-// createProjectPopupCards(projects);
-
-// Open project popup
-// const seeProjectBtns = util.getElAll(".see-project");
-//const projectPopups = [...util.getElAll(".project-container")];
-
-// seeProjectBtns.forEach((btn) => {
-//   btn.addEventListener("click", function () {
-//     projectPopups[btn.id].style.display = "block";
-//     document.body.style.position = "fixed";
-//   });
-// });
-
-// Close project popup
-// const closePopupBtns = [...util.getElAll(".close-popup-btn")];
-
-// closePopupBtns.forEach(function (closeBtn) {
-//   closeBtn.addEventListener("click", function () {
-//     const idOfCloseBtn = closeBtn.id.charAt(closeBtn.id.length - 1);
-//     projectPopups[idOfCloseBtn].style.display = "none";
-//     document.body.style.position = "static";
-//   });
-// });
 
 // Handle menu - open
 const openMenu = function () {
@@ -72,11 +44,6 @@ mobileMenuItems.forEach(function (link) {
 // Handle window resize
 const handleResizeForMenu = function () {
   const breakpoint = 768;
-
-  // projectPopups.forEach(function (popup) {
-  //   popup.style.display = "none";
-  //   document.body.style.position = "static";
-  // });
 
   if (window.innerWidth > breakpoint) {
     if (mobileMenu.classList.contains("open-menu")) closeMenu();
