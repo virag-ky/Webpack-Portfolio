@@ -1,11 +1,11 @@
 # Webpack Microverse Portfolio Master
 
-* @author  Vigra 
+* @author  Virag 
 * @version `0.0.0`
 * @controllers `util`
 
 ## Description
-Vigra Portfolio written in vailla JavaScript with webpack
+Virag Portfolio written in vailla JavaScript with webpack
 
 ## Install
 `npm install`

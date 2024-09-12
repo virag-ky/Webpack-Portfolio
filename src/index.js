@@ -2,7 +2,7 @@ import _ from 'lodash'
 import { util } from "./Util/utilities.js";
 
 /** 
-* @author Vigra <vkormoczy@gmail.comm>
+* @author Virag <vkormoczy@gmail.comm>
 * @version 0.0.0
 * @description My portfolio app
 * 
