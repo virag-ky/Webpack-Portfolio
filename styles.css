@@ -391,6 +391,7 @@ hr {
   color: var(--see-project-btn-text-color);
   transition: 0.5s;
   display: block;
+  max-width: 150px; /*** added this ***/
 }
 
 .see-project:hover,
@@ -697,9 +698,9 @@ textarea {
     margin-top: -1.5rem;
   }
 
-  .see-project {
+  /* .see-project { **** NOT NEEDED  *****
     width: 7.8rem;
-  }
+  } */
 
   /* About Myself section */
   .about-wrapper {
