@@ -1,403 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Virag Kormoczy" />
-  <meta
-    name="description"
-    content="Portfolio of Virag Kormoczy where she is showcasing her skills and experience in web development."
-  />
-  <title>Document</title>
-  <script src="https://unpkg.com/lodash@4.17.20"></script>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-
-  <header class="header">
-    <div class="white-bg"></div>
-    <nav class="toolbar">
-      <h1>Virag Kormoczy</h1>
-      <button class="menu-btn" aria-label="Open menu">
-        <img src="icons/menu.svg" alt="menu icon" />
-      </button>
-      <ul class="desktop-menu">
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-    </nav>
-    <div class="mobile-menu-section">
-      <ul class="mobile-menu close-menu">
-        <li>
-          <a href="#portfolio">Portfolio</a>
-        </li>
-        <li>
-          <a href="#about">About</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
-      </ul>
-      <button class="close-menu-btn" aria-label="Close menu">
-        <img src="icons/close-icon.svg" alt="close icon" />
-      </button>
-    </div>
-    <section class="headline-section">
-      <div class="headline-content">
-        <h2 class="welcome-text">
-          I'm Virag. <br />
-          Glad to see you!
-        </h2>
-        <p class="introduction">
-          I'm a freelance web developer who loves building websites and
-          features. Take a look at some of my work and experience. If
-          something interests you or you have a project in mind, feel free to
-          reach out—I'd love to help bring your ideas to life.
-        </p>
-        <div class="lets-connect-section">
-          <p class="lets-connect-text">LET'S CONNECT</p>
-          <div class="social-icons">
-            <a href="https://x.com/Virag_Ky" target="_blank">
-              <img src="icons/x.svg" alt="Twitter icon" class="x" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/virag-kormoczy-810943309/"
-              target="_blank"
-            >
-              <img src="icons/linkedin.svg" alt="LinkedIn icon" />
-            </a>
-            <a href="https://github.com/virag-ky" target="_blank">
-              <img src="icons/github.svg" alt="GitHub icon" />
-            </a>
-          </div>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Virag Kormoczy" />
+    <meta
+      name="description"
+      content="Portfolio of Virag Kormoczy where she is showcasing her skills and experience in web development."
+    />
+    <title>Document</title>
+    <script src="https://unpkg.com/lodash@4.17.20"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="white-bg"></div>
+      <nav class="toolbar">
+        <h1>Virag Kormoczy</h1>
+        <button class="menu-btn" aria-label="Open menu">
+          <img src="icons/menu.svg" alt="menu icon" />
+        </button>
+        <ul class="desktop-menu">
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mobile-menu-section">
+        <ul class="mobile-menu close-menu">
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+        <button class="close-menu-btn" aria-label="Close menu">
+          <img src="icons/close-icon.svg" alt="close icon" />
+        </button>
       </div>
-    </section>
-  </header>
-  <main>
-    <section id="portfolio" class="works-section">
-      <article class="project">
-        <img src="images/projects/restaurant.png" alt="restaurant project" />
-        <div class="project-content">
-          <h2 class="project-title">Restaurant UI Kit</h2>
-          <div class="project-info">
-            <p class="company">iCodeThis</p>
-            <p class="scope">Front-end</p>
-            <p class="year">2024</p>
-          </div>
-          <p class="project-description">
-            Easily reserve tables by using this restaurant UI kit.
-          </p>
-          <ul class="stacks">
-            <li class="label">HTML</li>
-            <li class="label">CSS</li>
-            <li class="label">JavaScript</li>
-          </ul>
-          <button id="0" class="see-project"  aria-label="See project">
-            See project
-          </button>
-        </div>
-      </article>
-      <article class="project">
-        <img src="images/projects/icodemas.png" alt="iCodeMas project" />
-        <div class="project-content">
-          <h2 class="project-title">iCodeMas</h2>
-          <div class="project-info">
-            <p class="company">iCodeThis</p>
-            <p class="scope">Front-end</p>
-            <p class="year">2023</p>
-          </div>
-          <p class="project-description">
-            A Christmas-themed e-commerce like website where you can shop
-            cookies, ornaments and gifts.
-          </p>
-          <ul class="stacks">
-            <li class="label">HTML</li>
-            <li class="label">CSS</li>
-            <li class="label">JavaScript</li>
-          </ul>
-          <button id="1" class="see-project" aria-label="See project">
-            See project
-          </button>
-        </div>
-      </article>
-      <article class="project">
-        <img src="images/projects/burger.png" alt="Jo's Burger project" />
-        <div class="project-content">
-          <h2 class="project-title">Jo's Burger</h2>
-          <div class="project-info">
-            <p class="company">iCodeThis</p>
-            <p class="scope">Front-end</p>
-            <p class="year">2024</p>
-          </div>
-          <p class="project-description">
-            New York's favorite burger - Jo's Burger. If you love burgers and
-            good mood, then this is your place.
-          </p>
-          <ul class="stacks">
-            <li class="label">HTML</li>
-            <li class="label">CSS</li>
-            <li class="label">JavaScript</li>
-          </ul>
-          <button id="2" class="see-project" aria-label="See project">
-            See project
-          </button>
-        </div>
-      </article>
-      <article class="project">
-        <img
-          src="images/projects/car-cosmetics.png"
-          alt="Car Detailing project"
-        />
-        <div class="project-content">
-          <h2 class="project-title">Pro Polir - Car Detailing</h2>
-          <div class="project-info">
-            <p class="company">Pro Polir</p>
-            <p class="scope">Front-end</p>
-            <p class="year">2024</p>
-          </div>
-          <p class="project-description">
-            This car detailing website provides information for customers
-            about the services and prices the company offers.
-          </p>
-          <ul class="stacks">
-            <li class="label">HTML</li>
-            <li class="label">SCSS</li>
-            <li class="label">React</li>
-          </ul>
-          <button id="3" class="see-project" aria-label="See project">
-            See project
-          </button>
-        </div>
-      </article>
-      <div class="project-container">
-        <article class="project-popup">
-          <div class="project-content">
-            <h2 class="project-title">Restaurant UI Kit</h2>
-            <button id="close-0" class="close-popup-btn">
-              <img src="./icons/close-popup.svg" alt="close icon" />
-            </button>
-            <div class="project-info">
-              <p class="company">iCodeThis</p>
-              <p class="scope">Front-end</p>
-              <p class="year">2024</p>
-            </div>
-            <img
-              src="images/projects/restaurant.png"
-              alt="restaurant project"
-            />
-            <p class="project-description">
-              A simple restaurant UI kit that enables users to reserve tables
-              by choosing the amount of people and the desired time.
-            </p>
-            <ul class="stacks">
-              <li class="label">HTML</li>
-              <li class="label">CSS</li>
-              <li class="label">JavaScript</li>
-            </ul>
-            <hr />
-            <div class="buttons-container">
-              <a
-                href="https://icodethis.com/modes/design-to-code/198/submissions/280958"
-                target="_blank"
-              >
-                <button class="see-project" aria-label="See live">
-                  See live
-                  <img src="./icons/see-live.svg" alt="see live arrow icon" />
-                </button>
-              </a>
-              <a
-                href="https://icodethis.com/modes/design-to-code/198/submissions/280958"
-                target="_blank"
-              >
-                <button class="see-project" aria-label="See source">
-                  See source
-                  <img src="./icons/see-source.svg" alt="GitHub icon" />
-                </button>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="project-container">
-        <article class="project-popup">
-          <div class="project-content">
-            <h2 class="project-title">iCodeMas</h2>
-            <button id="close-1" class="close-popup-btn">
-              <img src="./icons/close-popup.svg" alt="close icon" />
-            </button>
-            <div class="project-info">
-              <p class="company">iCodeThis</p>
-              <p class="scope">Front-end</p>
-              <p class="year">2023</p>
-            </div>
-            <img src="images/projects/icodemas.png" alt="iCodeMas project" />
-            <p class="project-description">
-              A fictional e-commerce website for Christmas shopping. Users can
-              shop gifts, cookies, and ornaments. They can add items to the
-              shopping cart and use the search bar to search for items that
-              are available.
-            </p>
-            <ul class="stacks">
-              <li class="label">HTML</li>
-              <li class="label">CSS</li>
-              <li class="label">JavaScript</li>
-            </ul>
-            <hr />
-            <div class="buttons-container">
-              <a
-                href="https://icodethis.com/modes/design-to-code/230/submissions/275148"
-                target="_blank"
-              >
-                <button class="see-project" aria-label="See live">
-                  See live
-                  <img src="./icons/see-live.svg" alt="see live arrow icon" />
-                </button>
-              </a>
-              <a
-                href="https://icodethis.com/modes/design-to-code/230/submissions/275148"
-                target="_blank"
-              >
-                <button class="see-project" aria-label="See source">
-                  See source
-                  <img src="./icons/see-source.svg" alt="GitHub icon" />
-                </button>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="project-container">
-        <article class="project-popup">
-          <div class="project-content">
-            <h2 class="project-title">Jo's Burger</h2>
-            <button id="close-2" class="close-popup-btn">
-              <img src="./icons/close-popup.svg" alt="close icon" />
-            </button>
-            <div class="project-info">
-              <p class="company">iCodeThis</p>
-              <p class="scope">Front-end</p>
-              <p class="year">2024</p>
-            </div>
-            <img src="images/projects/burger.png" alt="${project.altText}" />
-            <p class="project-description">
-              Jo's Burger is a fictional burger restaurant. The website
-              provides information about the company and some of the menu
-              items.
-            </p>
-            <ul class="stacks">
-              <li class="label">HTML</li>
-              <li class="label">CSS</li>
-              <li class="label">JavaScript</li>
-            </ul>
-            <hr />
-            <div class="buttons-container">
-              <a
-                href="https://virag-ky.github.io/100DaysOfCode-Challenge/Day99/"
-                target="_blank"
-              >
-                <button class="see-project" aria-label="See live">
-                  See live
-                  <img src="./icons/see-live.svg" alt="see live arrow icon" />
-                </button>
-              </a>
-              <a
-                href="https://github.com/virag-ky/100DaysOfCode-Challenge/tree/main/Day99"
-                target="_blank"
-              >
-                <button class="see-project" aria-label="See source">
-                  See source
-                  <img src="./icons/see-source.svg" alt="GitHub icon" />
-                </button>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-      <div class="project-container">
-        <article class="project-popup">
-          <div class="project-content">
-            <h2 class="project-title">Pro Polir - Car Detailing</h2>
-            <button id="close-3" class="close-popup-btn">
-              <img src="./icons/close-popup.svg" alt="close icon" />
-            </button>
-            <div class="project-info">
-              <p class="company">Pro Polir</p>
-              <p class="scope">Front-end</p>
-              <p class="year">2024</p>
-            </div>
-            <img
-              src="images/projects/car-cosmetics.png"
-              alt="car detailing project"
-            />
-            <p class="project-description">
-              Pro Polir Kft is a small car detailing business based in
-              Hungary. The website provides information about the services and
-              prices.
-            </p>
-            <ul class="stacks">
-              <li class="label">HTML</li>
-              <li class="label">SCSS</li>
-              <li class="label">React</li>
-            </ul>
-            <hr />
-            <div class="buttons-container">
-              <a href="https://pro-polir.netlify.app/" target="_blank">
-                <button class="see-project" aria-label="See live">
-                  See live
-                  <img src="./icons/see-live.svg" alt="see live arrow icon" />
-                </button>
-              </a>
-              <a
-                href="https://github.com/virag-ky/Car-Cosmetics"
-                target="_blank"
-              >
-                <button class="see-project" aria-label="See source">
-                  See source
-                  <img src="./icons/see-source.svg" alt="GitHub icon" />
-                </button>
-              </a>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section id="about" class="about-me-section">
-      <div class="about-wrapper">
-        <div class="about-content">
-          <h2>About Myself</h2>
-          <p class="about-me-paragraph">
-            I began my journey in web development at the end of 2021 and
-            joined an online remote bootcamp called Microverse in 2022.
-            Throughout my time at the bootcamp, I gained a variety of skills,
-            including essential soft skills. I collaborated with developers
-            from around the world, working on projects through pair
-            programming using the driver/navigator method. We reviewed each
-            other's code, provided constructive feedback, attended morning
-            meetings and afternoon stand-ups, and worked on individual tasks.
-            In the morning meetings, I often took on a leadership role,
-            leading discussions, giving instructions, and managing time
-            effectively.
-          </p>
-          <p class="about-me-paragraph">
-            In 2023, I worked on several freelance projects. I listened
-            carefully to my clients' needs, delivered on time, communicated
-            clearly, and explained the development process in detail so they
-            could understand each step.
-          </p>
-          <p class="about-me-paragraph">
-            At the beginning of 2024, I launched a YouTube channel to teach
-            the basics of HTML and CSS to new developers. I also completed the
-            100DaysOfCode challenge, where I created front-end components and
-            websites daily, sharing my progress on my channel. This challenge
-            demonstrated my consistency and dedication to achieving my goals.
+      <section class="headline-section">
+        <div class="headline-content">
+          <h2 class="welcome-text">
+            I'm Virag. <br />
+            Glad to see you!
+          </h2>
+          <p class="introduction">
+            I'm a freelance web developer who loves building websites and
+            features. Take a look at some of my work and experience. If
+            something interests you or you have a project in mind, feel free to
+            reach out—I'd love to help bring your ideas to life.
           </p>
           <div class="lets-connect-section">
             <p class="lets-connect-text">LET'S CONNECT</p>
@@ -417,119 +84,479 @@
             </div>
           </div>
         </div>
-        <div class="skills-content">
-          <div class="dropdown-list">
-            <h3>Languages</h3>
-            <button class="chevron" aria-label="Open languages list">
-              <img src="icons/chevron.svg" alt="chevron icon" />
+      </section>
+    </header>
+    <main>
+      <section id="portfolio" class="works-section">
+        <article class="project">
+          <img src="images/projects/restaurant.png" alt="restaurant project" />
+          <div class="project-content">
+            <h2 class="project-title">Restaurant UI Kit</h2>
+            <div class="project-info">
+              <p class="company">iCodeThis</p>
+              <p class="scope">Front-end</p>
+              <p class="year">2024</p>
+            </div>
+            <p class="project-description">
+              Easily reserve tables by using this restaurant UI kit.
+            </p>
+            <ul class="stacks">
+              <li class="label">HTML</li>
+              <li class="label">CSS</li>
+              <li class="label">JavaScript</li>
+            </ul>
+            <button
+              id="0"
+              class="btn btn-primary"
+              aria-label="See project"
+              data-bs-toggle="modal"
+              data-bs-target="#project1"
+            >
+              See project
             </button>
           </div>
-          <ul class="skills languages">
-            <li>
-              <img
-                src="icons/javascript.svg"
-                alt="JavaScript icon"
-              />JavaScript
-            </li>
-            <li><img src="icons/html.svg" alt="HTML icon" />HTML</li>
-            <li><img src="icons/css.svg" alt="CSS icon" />CSS</li>
-          </ul>
-          <div class="dropdown-list">
-            <h3>Frameworks</h3>
-            <button class="chevron" aria-label="Open frameworks list">
-              <img src="icons/chevron.svg" alt="chevron icon" />
+        </article>
+        <article class="project">
+          <img src="images/projects/icodemas.png" alt="iCodeMas project" />
+          <div class="project-content">
+            <h2 class="project-title">iCodeMas</h2>
+            <div class="project-info">
+              <p class="company">iCodeThis</p>
+              <p class="scope">Front-end</p>
+              <p class="year">2023</p>
+            </div>
+            <p class="project-description">
+              A Christmas-themed e-commerce like website where you can shop
+              cookies, ornaments and gifts.
+            </p>
+            <ul class="stacks">
+              <li class="label">HTML</li>
+              <li class="label">CSS</li>
+              <li class="label">JavaScript</li>
+            </ul>
+            <button id="1" class="see-project" aria-label="See project">
+              See project
             </button>
           </div>
-          <ul class="skills frameworks">
-            <li><img src="icons/react.svg" alt="React icon" />React</li>
-          </ul>
-          <div class="dropdown-list">
-            <h3>Tools</h3>
-            <button class="chevron" aria-label="Open tools list">
-              <img src="icons/chevron.svg" alt="chevron icon" />
+        </article>
+        <article class="project">
+          <img src="images/projects/burger.png" alt="Jo's Burger project" />
+          <div class="project-content">
+            <h2 class="project-title">Jo's Burger</h2>
+            <div class="project-info">
+              <p class="company">iCodeThis</p>
+              <p class="scope">Front-end</p>
+              <p class="year">2024</p>
+            </div>
+            <p class="project-description">
+              New York's favorite burger - Jo's Burger. If you love burgers and
+              good mood, then this is your place.
+            </p>
+            <ul class="stacks">
+              <li class="label">HTML</li>
+              <li class="label">CSS</li>
+              <li class="label">JavaScript</li>
+            </ul>
+            <button id="2" class="see-project" aria-label="See project">
+              See project
             </button>
           </div>
-          <ul class="skills tools">
-            <li><img src="icons/git.svg" alt="Git icon" />Git</li>
-            <li>
-              <img src="icons/github-skill.svg" alt="GitHub icon" />GitHub
-            </li>
-            <li>
-              <img src="icons/terminal.svg" alt="Terminal icon" />Terminal
-            </li>
-            <li><img src="icons/figma.svg" alt="Figma icon" />Figma</li>
-            <li><img src="icons/chatgpt.svg" alt="Robot icon" />ChatGPT</li>
-            <li><img src="icons/sass.svg" alt="Sass icon" /> Sass</li>
-            <li>
-              <img src="icons/browser.svg" alt="Chrome browser icon" />Browser
-              Developer Tools
-            </li>
-          </ul>
-          <div class="dropdown-list">
-            <h3>Soft Skills</h3>
-            <button class="chevron" aria-label="Open soft skills list">
-              <img src="icons/chevron.svg" alt="chevron icon" />
+        </article>
+        <article class="project">
+          <img
+            src="images/projects/car-cosmetics.png"
+            alt="Car Detailing project"
+          />
+          <div class="project-content">
+            <h2 class="project-title">Pro Polir - Car Detailing</h2>
+            <div class="project-info">
+              <p class="company">Pro Polir</p>
+              <p class="scope">Front-end</p>
+              <p class="year">2024</p>
+            </div>
+            <p class="project-description">
+              This car detailing website provides information for customers
+              about the services and prices the company offers.
+            </p>
+            <ul class="stacks">
+              <li class="label">HTML</li>
+              <li class="label">SCSS</li>
+              <li class="label">React</li>
+            </ul>
+            <button id="3" class="see-project" aria-label="See project">
+              See project
             </button>
           </div>
-          <ul class="skills soft-skills">
-            <li><p>Problem solving</p></li>
-            <li><p>Attention to detail</p></li>
-            <li><p>Time management</p></li>
-            <li><p>Effective communication</p></li>
-            <li><p>Teamwork</p></li>
-            <li><p>Good listener</p></li>
-            <li><p>Adaptability</p></li>
-            <li><p>Leadership</p></li>
-            <li><p>Self-motivation</p></li>
-            <li><p>Good stress management</p></li>
-            <li><p>Dependability</p></li>
-          </ul>
+        </article>
+        <div
+          class="modal fade"
+          id="project1"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <article class="project-popup">
+              <div class="project-content">
+                <h2 class="project-title">Restaurant UI Kit</h2>
+                <button id="close-0" class="close-popup-btn">
+                  <img src="./icons/close-popup.svg" alt="close icon" />
+                </button>
+                <div class="project-info">
+                  <p class="company">iCodeThis</p>
+                  <p class="scope">Front-end</p>
+                  <p class="year">2024</p>
+                </div>
+                <img
+                  src="images/projects/restaurant.png"
+                  alt="restaurant project"
+                />
+                <p class="project-description">
+                  A simple restaurant UI kit that enables users to reserve
+                  tables by choosing the amount of people and the desired time.
+                </p>
+                <ul class="stacks">
+                  <li class="label">HTML</li>
+                  <li class="label">CSS</li>
+                  <li class="label">JavaScript</li>
+                </ul>
+                <hr />
+                <div class="buttons-container">
+                  <a
+                    href="https://icodethis.com/modes/design-to-code/198/submissions/280958"
+                    target="_blank"
+                  >
+                    <button class="see-project" aria-label="See live">
+                      See live
+                      <img
+                        src="./icons/see-live.svg"
+                        alt="see live arrow icon"
+                      />
+                    </button>
+                  </a>
+                  <a
+                    href="https://icodethis.com/modes/design-to-code/198/submissions/280958"
+                    target="_blank"
+                  >
+                    <button class="see-project" aria-label="See source">
+                      See source
+                      <img src="./icons/see-source.svg" alt="GitHub icon" />
+                    </button>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
-    <section id="contact" class="contact-section">
-      <div class="blue-bg"></div>
-      <div class="white-bg"></div>
-      <h2>Contact Me</h2>
-      <p class="contact-description">
-        If you have an application you are interested in developing, a feature
-        that you need built or a project that needs coding, I’d love to help
-        with it!
-      </p>
-      <form action="https://formspree.io/f/xnqwrgpb" method="POST">
-        <input
-          title="Enter your name"
-          type="text"
-          name="name"
-          id="name"
-          maxlength="30"
-          placeholder="Enter your name"
-          required
-        />
-        <input
-          title="Enter your email"
-          type="email"
-          name="email"
-          id="email"
-          placeholder="Enter your email address"
-          required
-        />
+        <div class="project-container">
+          <article class="project-popup">
+            <div class="project-content">
+              <h2 class="project-title">iCodeMas</h2>
+              <button id="close-1" class="close-popup-btn">
+                <img src="./icons/close-popup.svg" alt="close icon" />
+              </button>
+              <div class="project-info">
+                <p class="company">iCodeThis</p>
+                <p class="scope">Front-end</p>
+                <p class="year">2023</p>
+              </div>
+              <img src="images/projects/icodemas.png" alt="iCodeMas project" />
+              <p class="project-description">
+                A fictional e-commerce website for Christmas shopping. Users can
+                shop gifts, cookies, and ornaments. They can add items to the
+                shopping cart and use the search bar to search for items that
+                are available.
+              </p>
+              <ul class="stacks">
+                <li class="label">HTML</li>
+                <li class="label">CSS</li>
+                <li class="label">JavaScript</li>
+              </ul>
+              <hr />
+              <div class="buttons-container">
+                <a
+                  href="https://icodethis.com/modes/design-to-code/230/submissions/275148"
+                  target="_blank"
+                >
+                  <button class="see-project" aria-label="See live">
+                    See live
+                    <img src="./icons/see-live.svg" alt="see live arrow icon" />
+                  </button>
+                </a>
+                <a
+                  href="https://icodethis.com/modes/design-to-code/230/submissions/275148"
+                  target="_blank"
+                >
+                  <button class="see-project" aria-label="See source">
+                    See source
+                    <img src="./icons/see-source.svg" alt="GitHub icon" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="project-container">
+          <article class="project-popup">
+            <div class="project-content">
+              <h2 class="project-title">Jo's Burger</h2>
+              <button id="close-2" class="close-popup-btn">
+                <img src="./icons/close-popup.svg" alt="close icon" />
+              </button>
+              <div class="project-info">
+                <p class="company">iCodeThis</p>
+                <p class="scope">Front-end</p>
+                <p class="year">2024</p>
+              </div>
+              <img src="images/projects/burger.png" alt="${project.altText}" />
+              <p class="project-description">
+                Jo's Burger is a fictional burger restaurant. The website
+                provides information about the company and some of the menu
+                items.
+              </p>
+              <ul class="stacks">
+                <li class="label">HTML</li>
+                <li class="label">CSS</li>
+                <li class="label">JavaScript</li>
+              </ul>
+              <hr />
+              <div class="buttons-container">
+                <a
+                  href="https://virag-ky.github.io/100DaysOfCode-Challenge/Day99/"
+                  target="_blank"
+                >
+                  <button class="see-project" aria-label="See live">
+                    See live
+                    <img src="./icons/see-live.svg" alt="see live arrow icon" />
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/virag-ky/100DaysOfCode-Challenge/tree/main/Day99"
+                  target="_blank"
+                >
+                  <button class="see-project" aria-label="See source">
+                    See source
+                    <img src="./icons/see-source.svg" alt="GitHub icon" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <div class="project-container">
+          <article class="project-popup">
+            <div class="project-content">
+              <h2 class="project-title">Pro Polir - Car Detailing</h2>
+              <button id="close-3" class="close-popup-btn">
+                <img src="./icons/close-popup.svg" alt="close icon" />
+              </button>
+              <div class="project-info">
+                <p class="company">Pro Polir</p>
+                <p class="scope">Front-end</p>
+                <p class="year">2024</p>
+              </div>
+              <img
+                src="images/projects/car-cosmetics.png"
+                alt="car detailing project"
+              />
+              <p class="project-description">
+                Pro Polir Kft is a small car detailing business based in
+                Hungary. The website provides information about the services and
+                prices.
+              </p>
+              <ul class="stacks">
+                <li class="label">HTML</li>
+                <li class="label">SCSS</li>
+                <li class="label">React</li>
+              </ul>
+              <hr />
+              <div class="buttons-container">
+                <a href="https://pro-polir.netlify.app/" target="_blank">
+                  <button class="see-project" aria-label="See live">
+                    See live
+                    <img src="./icons/see-live.svg" alt="see live arrow icon" />
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/virag-ky/Car-Cosmetics"
+                  target="_blank"
+                >
+                  <button class="see-project" aria-label="See source">
+                    See source
+                    <img src="./icons/see-source.svg" alt="GitHub icon" />
+                  </button>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section id="about" class="about-me-section">
+        <div class="about-wrapper">
+          <div class="about-content">
+            <h2>About Myself</h2>
+            <p class="about-me-paragraph">
+              I began my journey in web development at the end of 2021 and
+              joined an online remote bootcamp called Microverse in 2022.
+              Throughout my time at the bootcamp, I gained a variety of skills,
+              including essential soft skills. I collaborated with developers
+              from around the world, working on projects through pair
+              programming using the driver/navigator method. We reviewed each
+              other's code, provided constructive feedback, attended morning
+              meetings and afternoon stand-ups, and worked on individual tasks.
+              In the morning meetings, I often took on a leadership role,
+              leading discussions, giving instructions, and managing time
+              effectively.
+            </p>
+            <p class="about-me-paragraph">
+              In 2023, I worked on several freelance projects. I listened
+              carefully to my clients' needs, delivered on time, communicated
+              clearly, and explained the development process in detail so they
+              could understand each step.
+            </p>
+            <p class="about-me-paragraph">
+              At the beginning of 2024, I launched a YouTube channel to teach
+              the basics of HTML and CSS to new developers. I also completed the
+              100DaysOfCode challenge, where I created front-end components and
+              websites daily, sharing my progress on my channel. This challenge
+              demonstrated my consistency and dedication to achieving my goals.
+            </p>
+            <div class="lets-connect-section">
+              <p class="lets-connect-text">LET'S CONNECT</p>
+              <div class="social-icons">
+                <a href="https://x.com/Virag_Ky" target="_blank">
+                  <img src="icons/x.svg" alt="Twitter icon" class="x" />
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/virag-kormoczy-810943309/"
+                  target="_blank"
+                >
+                  <img src="icons/linkedin.svg" alt="LinkedIn icon" />
+                </a>
+                <a href="https://github.com/virag-ky" target="_blank">
+                  <img src="icons/github.svg" alt="GitHub icon" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="skills-content">
+            <div class="dropdown-list">
+              <h3>Languages</h3>
+              <button class="chevron" aria-label="Open languages list">
+                <img src="icons/chevron.svg" alt="chevron icon" />
+              </button>
+            </div>
+            <ul class="skills languages">
+              <li>
+                <img
+                  src="icons/javascript.svg"
+                  alt="JavaScript icon"
+                />JavaScript
+              </li>
+              <li><img src="icons/html.svg" alt="HTML icon" />HTML</li>
+              <li><img src="icons/css.svg" alt="CSS icon" />CSS</li>
+            </ul>
+            <div class="dropdown-list">
+              <h3>Frameworks</h3>
+              <button class="chevron" aria-label="Open frameworks list">
+                <img src="icons/chevron.svg" alt="chevron icon" />
+              </button>
+            </div>
+            <ul class="skills frameworks">
+              <li><img src="icons/react.svg" alt="React icon" />React</li>
+            </ul>
+            <div class="dropdown-list">
+              <h3>Tools</h3>
+              <button class="chevron" aria-label="Open tools list">
+                <img src="icons/chevron.svg" alt="chevron icon" />
+              </button>
+            </div>
+            <ul class="skills tools">
+              <li><img src="icons/git.svg" alt="Git icon" />Git</li>
+              <li>
+                <img src="icons/github-skill.svg" alt="GitHub icon" />GitHub
+              </li>
+              <li>
+                <img src="icons/terminal.svg" alt="Terminal icon" />Terminal
+              </li>
+              <li><img src="icons/figma.svg" alt="Figma icon" />Figma</li>
+              <li><img src="icons/chatgpt.svg" alt="Robot icon" />ChatGPT</li>
+              <li><img src="icons/sass.svg" alt="Sass icon" /> Sass</li>
+              <li>
+                <img src="icons/browser.svg" alt="Chrome browser icon" />Browser
+                Developer Tools
+              </li>
+            </ul>
+            <div class="dropdown-list">
+              <h3>Soft Skills</h3>
+              <button class="chevron" aria-label="Open soft skills list">
+                <img src="icons/chevron.svg" alt="chevron icon" />
+              </button>
+            </div>
+            <ul class="skills soft-skills">
+              <li><p>Problem solving</p></li>
+              <li><p>Attention to detail</p></li>
+              <li><p>Time management</p></li>
+              <li><p>Effective communication</p></li>
+              <li><p>Teamwork</p></li>
+              <li><p>Good listener</p></li>
+              <li><p>Adaptability</p></li>
+              <li><p>Leadership</p></li>
+              <li><p>Self-motivation</p></li>
+              <li><p>Good stress management</p></li>
+              <li><p>Dependability</p></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="contact-section">
+        <div class="blue-bg"></div>
+        <div class="white-bg"></div>
+        <h2>Contact Me</h2>
+        <p class="contact-description">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding, I’d love to help
+          with it!
+        </p>
+        <form action="https://formspree.io/f/xnqwrgpb" method="POST">
+          <input
+            title="Enter your name"
+            type="text"
+            name="name"
+            id="name"
+            maxlength="30"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            title="Enter your email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email address"
+            required
+          />
 
-        <textarea
-          title="Enter a message"
-          name="message"
-          id="message"
-          maxlength="500"
-          placeholder="Write your message here..."
-          required
-        ></textarea>
-        <button type="submit" class="get-in-touch">Get in touch</button>
-      </form>
-    </section>
-  </main>
+          <textarea
+            title="Enter a message"
+            name="message"
+            id="message"
+            maxlength="500"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+          <button type="submit" class="get-in-touch">Get in touch</button>
+        </form>
+      </section>
+    </main>
 
-
-  <script src="dist/main.js"></script>
-  
-</body>
+    <script src="dist/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>

@@ -1,18 +1,16 @@
-import _ from 'lodash'
+import _ from "lodash";
 import { util } from "./Util/utilities.js";
 
-/** 
-* @author Vigra <vkormoczy@gmail.comm>
-* @version 0.0.0
-* @description My portfolio app
-* 
-* @ModuleControllers dataController, callHistoryController, UIController, utililies, controller
-*/
-
+/**
+ * @author Vigra <vkormoczy@gmail.comm>
+ * @version 0.0.0
+ * @description My portfolio app
+ *
+ * @ModuleControllers dataController, callHistoryController, UIController, utililies, controller
+ */
 
 // We call the DOM of your classes from utilities.js
 const DOM = util.getDomStrings();
-
 
 const openMenuBtn = util.getEl(DOM.menuBtn);
 const closeMenuBtn = util.getEl(DOM.closeMenuBtn);
@@ -21,30 +19,27 @@ const mobileMenu = util.getElAll(DOM.mobileMenu);
 const mobileMenuItems = mobileMenu;
 const worksSection = util.getEl(DOM.worksSection);
 
-
-
 // Generate projects
 let btnId = 0;
 
 // createProjectPopupCards(projects);
 
 // Open project popup
-const seeProjectBtns = util.getElAll(".see-project");
-const projectPopups = [...util.getElAll(".project-container")];
+// const seeProjectBtns = util.getElAll(".see-project");
+// const projectPopups = [...util.getElAll(".project-container")];
 
-seeProjectBtns.forEach((btn) => {
-  btn.addEventListener("click", function()  {
-    projectPopups[btn.id].style.display = "block";
-    document.body.style.position = "fixed";
-  });
-});
-
+// seeProjectBtns.forEach((btn) => {
+//   btn.addEventListener("click", function () {
+//     projectPopups[btn.id].style.display = "block";
+//     document.body.style.position = "fixed";
+//   });
+// });
 
 // Close project popup
 const closePopupBtns = [...util.getElAll(".close-popup-btn")];
 
-closePopupBtns.forEach( function(closeBtn)  {
-  closeBtn.addEventListener("click", function() {
+closePopupBtns.forEach(function (closeBtn) {
+  closeBtn.addEventListener("click", function () {
     const idOfCloseBtn = closeBtn.id.charAt(closeBtn.id.length - 1);
     projectPopups[idOfCloseBtn].style.display = "none";
     document.body.style.position = "static";
@@ -52,7 +47,7 @@ closePopupBtns.forEach( function(closeBtn)  {
 });
 
 // Handle menu - open
-const openMenu = function() {
+const openMenu = function () {
   desktopMenu.classList.toggle("close-menu");
   mobileMenu.classList.toggle("open-menu");
   closeMenuBtn.classList.toggle("show-close-menu-btn");
@@ -62,7 +57,7 @@ const openMenu = function() {
 openMenuBtn.addEventListener("click", openMenu);
 
 // Handle menu - close
-const closeMenu = function() {
+const closeMenu = function () {
   mobileMenu.classList.toggle("open-menu");
   closeMenuBtn.classList.toggle("show-close-menu-btn");
   document.body.style.position = "static";
@@ -70,15 +65,15 @@ const closeMenu = function() {
 
 closeMenuBtn.addEventListener("click", closeMenu);
 
-mobileMenuItems.forEach( function(link) {
+mobileMenuItems.forEach(function (link) {
   link.addEventListener("click", closeMenu);
 });
 
 // Handle window resize
-const handleResizeForMenu = function() {
+const handleResizeForMenu = function () {
   const breakpoint = 768;
 
-  projectPopups.forEach( function(popup) {
+  projectPopups.forEach(function (popup) {
     popup.style.display = "none";
     document.body.style.position = "static";
   });
@@ -94,8 +89,8 @@ window.addEventListener("resize", handleResizeForMenu);
 const skillsList = [...util.getElAll(".skills")];
 const chevronBtns = util.getElAll(".chevron");
 
-chevronBtns.forEach( function(arrow) {
-  arrow.addEventListener("click", function() {
+chevronBtns.forEach(function (arrow) {
+  arrow.addEventListener("click", function () {
     skillsList[Array.from(chevronBtns).indexOf(arrow)].classList.toggle(
       "toggleSkills"
     );
