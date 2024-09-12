@@ -18,4 +18,4 @@ Virag Portfolio written in vailla JavaScript with webpack
 
 
 ## BUGS
-1. There was a bug on IOS chrome. The 'see project' button was not working. I fixed it by rebuilding my project in webpack.
+1. There is a known bug on iPhone. The 'see project' button is not working.
