@@ -14,8 +14,8 @@ Virag Portfolio written in vailla JavaScript with webpack
 `npm run build`
 
 ## Start Watch
-`npm start` This will start a watch (so you make a change in src/index.js. It will automatically compile your js file in the dist)
+`npm start`
 
 
 ## BUGS
-1. There is a known bug on iPhone. The 'see project' button is not working.
+1. There is a known bug on iPhone. The 'see project' button is not working. RESOLVED.
