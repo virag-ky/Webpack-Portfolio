@@ -161,6 +161,7 @@ h1 {
   line-height: var(--paragraph-line-height);
   color: var(--paragraph-color);
   margin: var(--basic-spacing) 0;
+  font-size: 1.15rem;
 }
 
 .lets-connect-text {
@@ -225,6 +226,14 @@ h1 {
 .project-popup {
   width: 100%;
   cursor: auto;
+}
+
+.project-popup h2 {
+  max-width: 300px;
+}
+
+.modal-content {
+  border: none;
 }
 
 .project:hover {
@@ -319,6 +328,7 @@ hr {
 
 .company {
   color: var(--paragraph-color);
+  font-size: 0.8rem;
 }
 
 .scope,
@@ -326,6 +336,7 @@ hr {
   display: flex;
   align-items: center;
   color: var(--scope-and-year-text-color);
+  font-size: 0.85rem;
 }
 
 .scope::before,
@@ -351,6 +362,7 @@ hr {
   align-items: center;
   gap: 0.5rem;
   list-style: none;
+  padding-left: 0;
 }
 
 .label {
@@ -369,16 +381,18 @@ hr {
 .get-in-touch {
   border-radius: 0.5rem;
   border: 1px solid var(--main-text-color);
-  padding: 0.75rem;
+  /* padding: 0.75rem; */
+  padding: 12px 6px;
   background: transparent;
   cursor: pointer;
-  margin: 0.75rem 0 0.6rem 0;
+  /* margin: 0.75rem 0 0.6rem 0; */
   letter-spacing: 0.5px;
   font-weight: 500;
   font-size: 1.06rem;
   color: var(--see-project-btn-text-color);
   transition: 0.5s;
   display: block;
+  max-width: 150px; /*** added this ***/
 }
 
 .see-project:hover,
@@ -413,7 +427,7 @@ hr {
 .about-me-paragraph {
   color: var(--paragraph-color);
   line-height: var(--paragraph-line-height);
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: var(--basic-spacing) 0;
 }
 
@@ -489,6 +503,7 @@ hr {
 .soft-skills li p {
   display: flex;
   align-items: center;
+  margin-bottom: 0;
 }
 
 .soft-skills li p::before {
@@ -629,8 +644,8 @@ textarea {
   }
 
   .introduction {
-    font-size: 1.25rem;
-    line-height: 1.75;
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
 
   /* ---Main content--- */
@@ -657,8 +672,8 @@ textarea {
   }
 
   .project-popup img {
-    height: 300px;
-    object-fit: contain;
+    height: 300px; 
+    object-fit: contain; 
   }
 
   .close-popup-btn img {
@@ -684,9 +699,9 @@ textarea {
     margin-top: -1.5rem;
   }
 
-  .see-project {
+  /* .see-project { **** NOT NEEDED  *****
     width: 7.8rem;
-  }
+  } */
 
   /* About Myself section */
   .about-wrapper {
