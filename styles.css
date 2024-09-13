@@ -672,8 +672,8 @@ textarea {
   }
 
   .project-popup img {
-    height: 400px; /* was 300px */
-    object-fit: cover; /*was contain*/
+    height: 300px; 
+    object-fit: contain; 
   }
 
   .close-popup-btn img {
