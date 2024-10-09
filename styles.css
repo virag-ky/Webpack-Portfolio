@@ -260,6 +260,10 @@ hr {
   margin: var(--basic-spacing) 0;
 }
 
+.project-popup a {
+  color: var(--main-text-color);
+}
+
 .buttons-container {
   display: flex;
   align-items: center;
@@ -377,7 +381,6 @@ hr {
 }
 
 .see-project,
-.get-my-resume,
 .get-in-touch {
   border-radius: 0.5rem;
   border: 1px solid var(--main-text-color);
@@ -388,7 +391,6 @@ hr {
   /* margin: 0.75rem 0 0.6rem 0; */
   letter-spacing: 0.5px;
   font-weight: 500;
-  font-size: 1.06rem;
   color: var(--see-project-btn-text-color);
   transition: 0.5s;
   display: block;
@@ -396,7 +398,6 @@ hr {
 }
 
 .see-project:hover,
-.get-my-resume:hover,
 .get-in-touch:hover {
   color: #fff;
   background: var(--main-text-color);
@@ -404,8 +405,7 @@ hr {
 }
 
 .see-project:active,
-.get-in-touch:active,
-.get-my-resume:active {
+.get-in-touch:active {
   color: #fff;
   background: #2230d2;
   box-shadow: none;
@@ -647,7 +647,7 @@ textarea {
   .project {
     display: flex;
     gap: 1.5rem;
-    height: 31rem;
+    height: 32rem;
   }
 
   .project:nth-of-type(even) {
@@ -656,7 +656,6 @@ textarea {
 
   .project img {
     height: 100%;
-    width: 50%;
     border-radius: 0.5rem;
   }
 
