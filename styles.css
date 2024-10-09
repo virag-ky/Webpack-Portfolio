@@ -491,13 +491,6 @@ hr {
 .skills li img {
   width: 3rem;
   height: 3rem;
-  border-radius: 50%;
-}
-
-.skills.tools li:nth-of-type(3) img,
-.skills.tools li:nth-of-type(5) img,
-.skills.tools li:nth-of-type(6) img {
-  border-radius: 0;
 }
 
 .soft-skills li p {
@@ -511,8 +504,8 @@ hr {
   display: block;
   border-radius: 50%;
   background: var(--main-text-color);
-  width: 1rem;
-  height: 1rem;
+  width: 0.6rem;
+  height: 0.6rem;
   margin-right: var(--basic-spacing);
 }
 
@@ -672,8 +665,8 @@ textarea {
   }
 
   .project-popup img {
-    height: 300px; 
-    object-fit: contain; 
+    height: 300px;
+    object-fit: contain;
   }
 
   .close-popup-btn img {
@@ -736,6 +729,7 @@ textarea {
   }
 
   .skills.soft-skills li {
+    flex-direction: row;
     height: auto;
   }
 
