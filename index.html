@@ -8,8 +8,14 @@
       name="description"
       content="Portfolio of Virag Kormoczy where she is showcasing her skills and experience in web development."
     />
-    <title>Document</title>
+    <title>Virag Kormoczy</title>
     <script src="https://unpkg.com/lodash@4.17.20"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -20,11 +26,26 @@
   </head>
   <body>
     <header class="header">
-      <div class="white-bg"></div>
       <nav class="toolbar">
         <h1 class="fw-bold">Virag Kormoczy</h1>
         <button class="menu-btn" aria-label="Open menu">
-          <img src="icons/menu.svg" alt="menu icon" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#2a6200"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M4 6l16 0" />
+            <path d="M4 12l16 0" />
+            <path d="M4 18l16 0" />
+          </svg>
         </button>
         <ul class="desktop-menu">
           <li>
@@ -108,7 +129,7 @@
             </ul>
             <button
               id="1"
-              class="btn btn-primary see-project"
+              class="btn see-project"
               data-bs-toggle="modal"
               data-bs-target="#project2"
               aria-label="See project"
@@ -136,7 +157,7 @@
             </ul>
             <button
               id="2"
-              class="btn btn-primary see-project"
+              class="btn see-project"
               data-bs-toggle="modal"
               data-bs-target="#project3"
               aria-label="See project"
@@ -168,7 +189,7 @@
             </ul>
             <button
               id="3"
-              class="btn btn-primary see-project"
+              class="btn see-project"
               data-bs-toggle="modal"
               data-bs-target="#project4"
               aria-label="See project"
@@ -542,8 +563,6 @@
         </div>
       </section>
       <section id="contact" class="contact-section">
-        <div class="blue-bg"></div>
-        <div class="white-bg"></div>
         <h2>Contact Me</h2>
         <p class="contact-description">
           If you have an application you are interested in developing, a feature

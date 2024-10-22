@@ -6,54 +6,43 @@
 
 /* Custom properties */
 :root {
-  --main-text-color: #4f60ff;
-  --secondary-headings-color: #172b4d;
-  --paragraph-color: #344563;
+  --main-text-color: #2a6200;
+  --secondary-text-color: #bb580f;
+  --main-font-family: "Nunito Sans", sans-serif;
+  --paragraph-color: #315e41;
   --paragraph-line-height: 1.5rem;
   --basic-spacing: 0.75rem;
-  --white-bg-color: #fff;
   --border-color: #dfe1e6;
   --dot-color: #c1c7d0;
   --scope-and-year-text-color: #687890;
-  --label-bg-color: #ebebff;
-  --see-project-btn-text-color: #396df2;
+  --label-bg-color: #f2f2f2;
   --section-padding: 7.1rem 1.5rem;
   --section-border-radius: 4.5rem;
   --list-bg-color: #f7f7f9;
   --list-text-color: #253858;
   --secondary-headings-size: 2.5rem;
-  --input-border-color: #cfd8dc;
   --placeholder-text-color: #b3bac5;
 }
 
 body {
-  font-family: Poppins, sans-serif;
-  background: #f7f7f9;
+  font-family: Quicksand, sans-serif;
+  background: #eee;
   position: relative;
 }
 
 /* ---Header--- */
 
 .header {
+  background: #fff;
   padding: 2.75rem 0;
   height: 100vh;
   max-height: 750px;
-  position: relative;
-}
-
-.white-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: var(--white-bg-color);
-  z-index: -1;
-  border-bottom-left-radius: var(--section-border-radius);
+  border-bottom-left-radius: 4.5rem;
 }
 
 /* Toolbar/Nav */
 .toolbar {
+  font-family: var(--main-font-family);
   max-width: 1156px;
   height: 3rem;
   display: flex;
@@ -66,13 +55,6 @@ body {
 h1 {
   color: var(--main-text-color);
   font-size: 1.1rem;
-  animation: 3s rotate-logo;
-}
-
-@keyframes rotate-logo {
-  from {
-    transform: rotate(360deg);
-  }
 }
 
 .menu-btn {
@@ -114,7 +96,7 @@ h1 {
   gap: var(--basic-spacing);
   position: absolute;
   top: 0;
-  background-color: rgba(43, 64, 255, 0.8);
+  background-color: rgba(35, 60, 47, 0.881);
   width: 100vw;
   height: 100vh;
   padding: var(--section-padding);
@@ -128,7 +110,7 @@ h1 {
 }
 
 .open-menu li a {
-  color: var(--white-bg-color);
+  color: #fff;
   font-size: 2rem;
   text-decoration: none;
   font-weight: 600;
@@ -136,13 +118,12 @@ h1 {
 
 /* Headline section */
 .headline-section {
-  background-image: url("./images/header-bg-mobile.svg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: #fff;
   height: 100%;
   padding: var(--section-padding);
   display: flex;
   align-items: center;
+  border-bottom-left-radius: 4.5rem;
 }
 
 .headline-content {
@@ -152,8 +133,9 @@ h1 {
 }
 
 .welcome-text {
+  font-family: var(--main-font-family);
   font-size: 2.5rem;
-  color: var(--secondary-headings-color);
+  color: var(--main-text-color);
   text-align: left;
 }
 
@@ -165,7 +147,8 @@ h1 {
 }
 
 .lets-connect-text {
-  color: var(--main-text-color);
+  font-family: var(--main-font-family);
+  color: var(--secondary-text-color);
   line-height: var(--paragraph-line-height);
   font-weight: 500;
   margin: var(--basic-spacing) 0;
@@ -198,7 +181,7 @@ h1 {
 
 .project,
 .project-popup {
-  background: var(--white-bg-color);
+  background: #fff;
   border-radius: 1rem;
   padding: 1rem;
   border: 1px solid var(--border-color);
@@ -229,7 +212,9 @@ h1 {
 }
 
 .project-popup h2 {
+  font-family: var(--main-font-family);
   max-width: 300px;
+  color: var(--main-text-color);
 }
 
 .modal-content {
@@ -237,8 +222,7 @@ h1 {
 }
 
 .project:hover {
-  box-shadow: 0 3rem 3rem rgba(37, 47, 137, 0.08);
-  border-color: var(--main-text-color);
+  box-shadow: 0 3rem 3rem rgba(64, 94, 77, 0.461);
   transform: scale(1.02);
 }
 
@@ -316,7 +300,8 @@ hr {
 }
 
 .project-title {
-  color: var(--secondary-headings-color);
+  font-family: var(--main-font-family);
+  color: var(--main-text-color);
   line-height: 2.75rem;
   font-size: 2rem;
   margin: var(--basic-spacing) 0;
@@ -331,7 +316,7 @@ hr {
 }
 
 .company {
-  color: var(--paragraph-color);
+  color: var(--secondary-text-color);
   font-size: 0.8rem;
 }
 
@@ -383,43 +368,39 @@ hr {
 .see-project,
 .get-in-touch {
   border-radius: 0.5rem;
-  border: 1px solid var(--main-text-color);
-  /* padding: 0.75rem; */
   padding: 12px 6px;
-  background: transparent;
+  background: #496352;
   cursor: pointer;
-  /* margin: 0.75rem 0 0.6rem 0; */
   letter-spacing: 0.5px;
   font-weight: 500;
-  color: var(--see-project-btn-text-color);
+  color: #fff;
   transition: 0.5s;
   display: block;
-  max-width: 150px; /*** added this ***/
+  max-width: 150px;
 }
 
-.see-project:hover,
-.get-in-touch:hover {
+.see-project:hover {
   color: #fff;
-  background: var(--main-text-color);
-  box-shadow: 0 0.5rem 1rem #4053fc3d;
+  background: #54725e;
+  box-shadow: 0 0.5rem 1rem #78877e;
 }
 
-.see-project:active,
-.get-in-touch:active {
+.see-project:active {
   color: #fff;
-  background: #2230d2;
+  background: #5c9b68;
   box-shadow: none;
 }
 
 /* About Myself section */
 .about-me-section {
-  background: var(--white-bg-color);
+  background: #fff;
   padding: var(--section-padding);
   border-top-right-radius: var(--section-border-radius);
 }
 
 .about-me-section h2 {
-  color: var(--secondary-headings-color);
+  font-family: var(--main-font-family);
+  color: var(--main-text-color);
   font-size: var(--secondary-headings-size);
   line-height: 3.25rem;
 }
@@ -447,6 +428,7 @@ hr {
 .dropdown-list h3 {
   font-size: 1.25rem;
   font-weight: 500;
+  color: var(--secondary-text-color);
 }
 
 .chevron {
@@ -479,7 +461,6 @@ hr {
   border-radius: 0.5rem;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--list-text-color);
   line-height: 1.25rem;
   display: flex;
   align-items: center;
@@ -512,46 +493,25 @@ hr {
 /* Contact form */
 .contact-section {
   padding: var(--section-padding);
-  position: relative;
-  background-image: url("./images/contact-bg-mobile.svg");
-  background-repeat: no-repeat;
-  background-position: top right;
-}
-
-.contact-section .white-bg {
-  border-radius: none;
-  z-index: -2;
-}
-
-.blue-bg {
-  border-top-left-radius: var(--section-border-radius);
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: var(--main-text-color);
-  z-index: -1;
+  background: #496352;
 }
 
 .contact-section h2 {
+  font-family: var(--main-font-family);
   font-size: var(--secondary-headings-size);
-  color: var(--white-bg-color);
-  position: relative;
-  background: var(--main-text-color);
+  color: #fff;
   width: max-content;
   margin: 0 auto;
 }
 
 .contact-description {
-  color: var(--label-bg-color);
+  color: #fff;
   font-size: 1.25rem;
   line-height: 1.75;
   text-align: center;
   margin: var(--basic-spacing) 0;
   position: relative;
   line-height: 1.75rem;
-  background: var(--main-text-color);
 }
 
 form {
@@ -566,10 +526,11 @@ input,
 textarea {
   font-size: 1rem;
   color: var(--secondary-headings-color);
-  border: 1px solid var(--input-border-color);
+  border: none;
   border-radius: 0.5rem;
   padding: var(--basic-spacing);
   font-family: inherit;
+  outline: none;
 }
 
 input {
@@ -577,7 +538,7 @@ input {
 }
 
 ::placeholder {
-  color: var(--placeholder-text-color);
+  color: #54725e;
 }
 
 textarea {
@@ -587,13 +548,10 @@ textarea {
 }
 
 .get-in-touch {
-  background: var(--white-bg-color);
+  background: #fff;
   color: var(--main-text-color);
   width: 8.8rem;
-}
-
-.get-in-touch:hover {
-  border: 1px solid #fff;
+  border: 1px solid #54725e;
 }
 
 /* Rules for larger screen sizes */
@@ -616,7 +574,7 @@ textarea {
   }
 
   .desktop-menu li a {
-    color: var(--paragraph-color);
+    color: var(--secondary-text-color);
     text-decoration: none;
     font-weight: 500;
     font-size: 0.9rem;
@@ -691,10 +649,6 @@ textarea {
     margin-top: -1.5rem;
   }
 
-  /* .see-project { **** NOT NEEDED  *****
-    width: 7.8rem;
-  } */
-
   /* About Myself section */
   .about-wrapper {
     display: flex;
@@ -733,11 +687,6 @@ textarea {
   }
 
   /* Contact form */
-  .contact-section {
-    background-image: url("images/contact-bg-desktop.svg");
-    background-size: contain;
-    background-position: 50% 50%;
-  }
 
   .contact-section h2 {
     line-height: 3.25;
@@ -756,13 +705,5 @@ textarea {
 
   .get-in-touch {
     margin: 0 auto;
-  }
-}
-
-@media (min-width: 1000px) {
-  .headline-section {
-    background-image: url("images/header-bg-desktop.svg");
-    background-position: center;
-    background-size: contain;
   }
 }
