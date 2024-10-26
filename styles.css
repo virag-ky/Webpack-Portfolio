@@ -124,6 +124,9 @@ h1 {
   display: flex;
   align-items: center;
   border-bottom-left-radius: 4.5rem;
+  background: url("./images/header-bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headline-content {
@@ -382,7 +385,6 @@ hr {
 .see-project:hover {
   color: #fff;
   background: var(--main-text-color);
-  box-shadow: 0 0.5rem 1rem #98a6b8;
 }
 
 .see-project:active {
@@ -590,6 +592,13 @@ textarea {
   }
 
   /* Headline section */
+  .headline-section {
+    background: url("./images/header-bg-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
   .welcome-text {
     font-size: 3rem;
   }
