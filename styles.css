@@ -6,10 +6,10 @@
 
 /* Custom properties */
 :root {
-  --main-text-color: #2a6200;
-  --secondary-text-color: #bb580f;
+  --main-text-color: #1a73f8;
+  --secondary-text-color: #2584ff;
   --main-font-family: "Nunito Sans", sans-serif;
-  --paragraph-color: #315e41;
+  --paragraph-color: #1a2d4f;
   --paragraph-line-height: 1.5rem;
   --basic-spacing: 0.75rem;
   --border-color: #dfe1e6;
@@ -26,7 +26,7 @@
 
 body {
   font-family: Quicksand, sans-serif;
-  background: #eee;
+  background: #f2f2f2;
   position: relative;
 }
 
@@ -96,7 +96,7 @@ h1 {
   gap: var(--basic-spacing);
   position: absolute;
   top: 0;
-  background-color: rgba(35, 60, 47, 0.881);
+  background-color: rgba(31, 69, 150, 0.767);
   width: 100vw;
   height: 100vh;
   padding: var(--section-padding);
@@ -222,7 +222,7 @@ h1 {
 }
 
 .project:hover {
-  box-shadow: 0 3rem 3rem rgba(64, 94, 77, 0.461);
+  box-shadow: 0 3rem 3rem rgba(112, 133, 192, 0.27);
   transform: scale(1.02);
 }
 
@@ -369,7 +369,7 @@ hr {
 .get-in-touch {
   border-radius: 0.5rem;
   padding: 12px 6px;
-  background: #496352;
+  background: var(--main-text-color);
   cursor: pointer;
   letter-spacing: 0.5px;
   font-weight: 500;
@@ -381,13 +381,13 @@ hr {
 
 .see-project:hover {
   color: #fff;
-  background: #54725e;
-  box-shadow: 0 0.5rem 1rem #78877e;
+  background: #3e8bff;
+  box-shadow: 0 0.5rem 1rem #98a6b8;
 }
 
 .see-project:active {
   color: #fff;
-  background: #5c9b68;
+  background: #3f6dac;
   box-shadow: none;
 }
 
@@ -493,7 +493,7 @@ hr {
 /* Contact form */
 .contact-section {
   padding: var(--section-padding);
-  background: #496352;
+  background: var(--main-text-color);
 }
 
 .contact-section h2 {
