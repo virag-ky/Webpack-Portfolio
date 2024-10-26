@@ -6,16 +6,16 @@
 
 /* Custom properties */
 :root {
-  --main-text-color: #1a73f8;
-  --secondary-text-color: #2584ff;
+  --main-text-color: #6070ff;
+  --secondary-text-color: #7f8cff;
   --main-font-family: "Nunito Sans", sans-serif;
-  --paragraph-color: #1a2d4f;
+  --paragraph-color: #344563;
   --paragraph-line-height: 1.5rem;
   --basic-spacing: 0.75rem;
   --border-color: #dfe1e6;
   --dot-color: #c1c7d0;
   --scope-and-year-text-color: #687890;
-  --label-bg-color: #f2f2f2;
+  --label-bg-color: #ebebff;
   --section-padding: 7.1rem 1.5rem;
   --section-border-radius: 4.5rem;
   --list-bg-color: #f7f7f9;
@@ -26,7 +26,7 @@
 
 body {
   font-family: Quicksand, sans-serif;
-  background: #f2f2f2;
+  background: #f4f5f7;
   position: relative;
 }
 
@@ -96,7 +96,7 @@ h1 {
   gap: var(--basic-spacing);
   position: absolute;
   top: 0;
-  background-color: rgba(31, 69, 150, 0.767);
+  background-color: rgba(96, 112, 255, 0.873);
   width: 100vw;
   height: 100vh;
   padding: var(--section-padding);
@@ -135,7 +135,6 @@ h1 {
 .welcome-text {
   font-family: var(--main-font-family);
   font-size: 2.5rem;
-  color: var(--main-text-color);
   text-align: left;
 }
 
@@ -222,7 +221,7 @@ h1 {
 }
 
 .project:hover {
-  box-shadow: 0 3rem 3rem rgba(112, 133, 192, 0.27);
+  box-shadow: 0 48px 48px #252f890d;
   transform: scale(1.02);
 }
 
@@ -369,25 +368,26 @@ hr {
 .get-in-touch {
   border-radius: 0.5rem;
   padding: 12px 6px;
-  background: var(--main-text-color);
+  background: transparent;
   cursor: pointer;
   letter-spacing: 0.5px;
   font-weight: 500;
-  color: #fff;
+  color: var(--main-text-color);
   transition: 0.5s;
   display: block;
   max-width: 150px;
+  border: 1px solid var(--main-text-color);
 }
 
 .see-project:hover {
   color: #fff;
-  background: #3e8bff;
+  background: var(--main-text-color);
   box-shadow: 0 0.5rem 1rem #98a6b8;
 }
 
 .see-project:active {
   color: #fff;
-  background: #3f6dac;
+  background: #2230d2;
   box-shadow: none;
 }
 
